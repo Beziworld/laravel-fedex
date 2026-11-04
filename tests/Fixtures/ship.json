@@ -1,0 +1,39 @@
+{
+    "transactionId": "624deea6-b709-470c-8c39-4b5511281492",
+    "customerTransactionId": "ORDER-1",
+    "output": {
+        "transactionShipments": [
+            {
+                "serviceType": "FEDEX_INTERNATIONAL_PRIORITY",
+                "shipDatestamp": "2026-11-05",
+                "serviceCategory": "EXPRESS",
+                "serviceName": "FedEx International Priority",
+                "alerts": [{"code": "SHIP.RECIPIENT.POSTALCITY.MISMATCH", "alertType": "NOTE", "message": "Recipient postal-city combination mismatch."}],
+                "masterTrackingNumber": "794953535000",
+                "pieceResponses": [
+                    {
+                        "masterTrackingNumber": "794953535000",
+                        "trackingNumber": "794953535000",
+                        "packageSequenceNumber": 1,
+                        "netChargeAmount": 52.4,
+                        "packageDocuments": [{"contentType": "LABEL", "copiesToPrint": 1, "encodedLabel": "JVBERi0xLjcgbGFiZWw=", "docType": "PDF"}],
+                        "customerReferences": [{"customerReferenceType": "CUSTOMER_REFERENCE", "value": "ORDER-1"}]
+                    },
+                    {
+                        "masterTrackingNumber": "794953535000",
+                        "trackingNumber": "794953535011",
+                        "packageSequenceNumber": 2,
+                        "packageDocuments": [{"contentType": "LABEL", "copiesToPrint": 1, "encodedLabel": "JVBERi0xLjcgbGFiZWw=", "docType": "PDF"}]
+                    }
+                ],
+                "shipmentDocuments": [{"contentType": "COMMERCIAL_INVOICE", "copiesToPrint": 3, "encodedLabel": "JVBERi0xLjcgaW52b2ljZQ==", "docType": "PDF"}],
+                "completedShipmentDetail": {
+                    "shipmentRating": {
+                        "actualRateType": "PAYOR_ACCOUNT_SHIPMENT",
+                        "shipmentRateDetails": [{"rateType": "PAYOR_ACCOUNT_SHIPMENT", "totalNetCharge": 104.8, "currency": "EUR"}]
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "scanEvent": {
+        "eventCode": "DL",
+        "eventCreateTime": "2026-11-06T10:12:00+01:00",
+        "eventDescription": "Delivered",
+        "location": {"locationContactAndAddress": {"address": {"city": "BERLIN", "countryCode": "DE"}}}
+    },
+    "trackResult": {
+        "trackingInfo": {"currentTrackingInfo": {"trackingNumber": "794953535000", "carrierCode": "FDXE"}}
+    }
+}

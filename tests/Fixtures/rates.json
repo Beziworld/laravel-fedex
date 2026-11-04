@@ -1,0 +1,26 @@
+{
+    "transactionId": "7c1b2d2e",
+    "output": {
+        "quoteDate": "2026-11-04",
+        "rateReplyDetails": [
+            {
+                "serviceType": "FEDEX_INTERNATIONAL_PRIORITY_EXPRESS",
+                "serviceName": "FedEx International Priority Express",
+                "packagingType": "YOUR_PACKAGING",
+                "ratedShipmentDetails": [
+                    {"rateType": "ACCOUNT", "totalNetCharge": 120.5, "shipmentRateDetail": {"currency": "EUR"}},
+                    {"rateType": "LIST", "totalNetCharge": 160.0, "shipmentRateDetail": {"currency": "EUR"}}
+                ],
+                "operationalDetail": {"deliveryDate": "2026-11-06T10:30:00", "transitTime": "TWO_DAYS"}
+            },
+            {
+                "serviceType": "FEDEX_REGIONAL_ECONOMY",
+                "serviceName": "FedEx Regional Economy",
+                "ratedShipmentDetails": [
+                    {"rateType": "LIST", "totalNetCharge": 60.25, "shipmentRateDetail": {"currency": "EUR"}}
+                ],
+                "customerMessages": [{"code": "SERVICE.TYPE.INTERNATIONAL.MESSAGE", "message": "Rate does not include duties and taxes"}]
+            }
+        ]
+    }
+}

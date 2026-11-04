@@ -1,0 +1,36 @@
+{
+    "transactionId": "a1f3",
+    "output": {
+        "completeTrackResults": [
+            {
+                "trackingNumber": "794953535000",
+                "trackResults": [
+                    {
+                        "trackingNumberInfo": {"trackingNumber": "794953535000", "carrierCode": "FDXE", "trackingNumberUniqueId": "12029~794953535000~FDEG"},
+                        "latestStatusDetail": {"code": "DL", "derivedCode": "DL", "statusByLocale": "Delivered", "description": "Delivered"},
+                        "dateAndTimes": [
+                            {"type": "ACTUAL_DELIVERY", "dateTime": "2026-11-06T10:12:00+01:00"},
+                            {"type": "SHIP", "dateTime": "2026-11-05T00:00:00-06:00"}
+                        ],
+                        "deliveryDetails": {"receivedByName": "M.MUSTERMANN"},
+                        "serviceDetail": {"type": "FEDEX_INTERNATIONAL_PRIORITY", "description": "FedEx International Priority"},
+                        "scanEvents": [
+                            {"date": "2026-11-05T18:00:00+01:00", "eventType": "PU", "eventDescription": "Picked up", "derivedStatusCode": "PU", "scanLocation": {"city": "WARSAW", "postalCode": "00-001", "countryCode": "PL"}, "locationType": "PICKUP_LOCATION"},
+                            {"date": "2026-11-06T10:12:00+01:00", "eventType": "DL", "eventDescription": "Delivered", "derivedStatusCode": "DL", "scanLocation": {"city": "BERLIN", "postalCode": "10785", "countryCode": "DE"}, "locationType": "DELIVERY_LOCATION"},
+                            {"date": "2026-11-06T07:45:00+01:00", "eventType": "OD", "eventDescription": "On FedEx vehicle for delivery", "derivedStatusCode": "OD", "scanLocation": {"city": "BERLIN", "countryCode": "DE"}}
+                        ]
+                    }
+                ]
+            },
+            {
+                "trackingNumber": "123456789012",
+                "trackResults": [
+                    {
+                        "trackingNumberInfo": {"trackingNumber": "123456789012"},
+                        "error": {"code": "TRACKING.TRACKINGNUMBER.NOTFOUND", "message": "Tracking number cannot be found. Please correct the tracking number and try again."}
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "name": "beziworld/laravel-fedex",
+    "description": "FedEx REST API client for Laravel: OAuth2, shipments with PDF/PNG/ZPL labels and commercial invoices, cancel, rates, tracking with typed events, proof of delivery, tracking webhooks, address validation, locations and pickups.",
+    "keywords": [
+        "laravel",
+        "fedex",
+        "courier",
+        "shipping",
+        "shipment",
+        "label",
+        "tracking",
+        "rates",
+        "webhook",
+        "oauth2"
+    ],
+    "homepage": "https://github.com/beziworld/laravel-fedex",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kamil Ćwiertnia",
+            "email": "biuro@beziworld.eu",
+            "homepage": "https://beziworld.eu",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/beziworld/laravel-fedex/issues",
+        "source": "https://github.com/beziworld/laravel-fedex"
+    },
+    "require": {
+        "php": "^8.3",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.8",
+        "illuminate/cache": "^12.0|^13.0",
+        "illuminate/console": "^12.0|^13.0",
+        "illuminate/contracts": "^12.0|^13.0",
+        "illuminate/events": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/routing": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^3.7|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0",
+        "phpstan/phpstan-strict-rules": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beziworld\\Fedex\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Beziworld\\Fedex\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "test-coverage": "pest --coverage --min=80",
+        "analyse": "phpstan analyse --memory-limit=1G",
+        "format": "pint",
+        "lint": "pint --test",
+        "ci": [
+            "@lint",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Beziworld\\Fedex\\FedexServiceProvider"
+            ],
+            "aliases": {
+                "Fedex": "Beziworld\\Fedex\\Facades\\Fedex"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
